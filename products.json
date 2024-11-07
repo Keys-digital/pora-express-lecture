@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Converse shoe",
+    "price": 800,
+    "category": "footwear"
+  },
+  {
+    "id": 2,
+    "name": "Gucci watch",
+    "price": 300,
+    "category": "accessories"
+  },
+  {
+    "id": 3,
+    "name": "Nike shoe",
+    "price": 900,
+    "category": "footwear"
+  },
+  {
+    "id": 4,
+    "name": "Philips Bulb",
+    "price": 95,
+    "category": "household"
+  },
+  {
+    "id": 5,
+    "name": "iPhone 25",
+    "price": 2400,
+    "category": "electronics"
+  },
+  {
+    "id": 6,
+    "name": "HP laptop",
+    "price": 1800,
+    "category": "electronics"
+  }
+]
