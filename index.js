@@ -3,7 +3,6 @@ const express = require("express")
 const app = express()
 const PORT = 5200
 
-// console.log(products)
 // Add a middleware to parse all request body
 app.use(express.json())
 
@@ -57,10 +56,18 @@ app.post("/api/products", function (request, response) {
 // Endpoint to retrieve all products in a specific category
 app.get("/api/products/:category", function (request, response) {
   const categoryName = request.params.category
-  // Research Array.filter method
   const productsInACategory = products.filter(function (product) {
     return product.category === categoryName
   })
+
+  if (productsInACategory.length === 0) {
+    return response.status(404).json({
+      error: true,
+      message: "Category not found"
+    })
+     
+  }
+
   response.status(200).json(productsInACategory)
 })
 
